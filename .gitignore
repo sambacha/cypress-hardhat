@@ -1,0 +1,68 @@
+# -*- mode: gitignore; -*-
+.next/
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+cache/
+artifacts/
+logs
+*.log
+!/broadcast
+/broadcast/*
+/broadcast/*/31337/
+
+## CVE-2021-21300 style exploits
+.\#*
+
+## General ##
+*~
+\#*\#
+/**/build
+.DS_Store
+node_modules
+tmp/
+_dev/
+coverage/
+/dist
+/build
+
+## Binary ##
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+## IDE ##
+.secret
+.idea/*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
